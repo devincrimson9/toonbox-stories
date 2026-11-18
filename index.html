@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Your story as a 3D cartoon</title>
+  <meta name="description" content="Custom 3D animated cartoon videos of your story — proposals, anniversaries, birthdays, roasts and small-brand ads. Written for you, made by hand, ready to post.">
+  <meta property="og:title" content="Your story, as a 3D cartoon">
+  <meta property="og:description" content="Custom Pixar-style 3D cartoon videos — love stories, birthdays, roasts and brand ads.">
+  <meta property="og:image" content="videos/the-ring-proposal.jpg">
+  <meta name="theme-color" content="#140f1f">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23ffb547'/><text x='50' y='70' font-size='60' text-anchor='middle'>🎬</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#top" class="brand"><span class="brand-dot" aria-hidden="true"></span><span data-name>Toonbox Stories</span></a>
+  <a href="#order" class="btn btn-small">Order yours</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Custom 3D animated cartoons</p>
+      <h1>Your story,<br>as a <span class="glow">Pixar-style</span> 3D cartoon.</h1>
+      <p class="lead">Proposals, love stories, birthdays, roasting your best friend — or an ad for your café. Tell us what happened. We turn it into a short, cinematic cartoon you'll want to post.</p>
+      <div class="hero-ctas">
+        <a href="#order" class="btn">Order yours</a>
+        <a href="#samples" class="btn btn-ghost">Watch samples</a>
+      </div>
+      <ul class="hero-facts">
+        <li><strong data-personal-price>$29</strong> personal stories</li>
+        <li><strong data-delivery>3–5</strong> day delivery</li>
+        <li><strong>9:16</strong> ready for TikTok &amp; Reels</li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <div class="phone">
+        <video id="heroVideo" autoplay muted loop playsinline preload="auto"></video>
+        <button class="sound-btn" id="heroSound" type="button" aria-label="Turn sound on">🔇 Tap for sound</button>
+      </div>
+      <p class="hero-caption">From our TikTok series <em>“The Ring”</em></p>
+    </div>
+  </section>
+
+  <!-- OFFERS -->
+  <section class="section wrap" id="offers">
+    <h2>Two ways to get your cartoon</h2>
+    <div class="offers">
+      <article class="offer">
+        <p class="offer-kicker">For you &amp; your people</p>
+        <h3>Personal story</h3>
+        <p class="price"><span>from</span> <strong data-personal-price>$29</strong></p>
+        <p class="offer-len" data-personal-length>30–60 seconds</p>
+        <ul class="chips">
+          <li>💍 Proposal</li><li>❤️ Love story</li><li>🥂 Anniversary</li>
+          <li>🎂 Birthday</li><li>🔥 Roast a friend</li><li>📖 My real story</li>
+        </ul>
+        <ul class="ticks">
+          <li>Script written from your story</li>
+          <li>Characters inspired by your photos or descriptions</li>
+          <li>Music, captions and a vertical video file</li>
+        </ul>
+        <a href="#order" class="btn btn-block" data-package="Personal story">Order a personal story</a>
+      </article>
+
+      <article class="offer offer-alt">
+        <p class="offer-kicker">For cafés, shops &amp; apps</p>
+        <h3>Brand cartoon ad</h3>
+        <p class="price"><span>from</span> <strong data-brand-price>$129</strong></p>
+        <p class="offer-len" data-brand-length>30–60 seconds</p>
+        <ul class="chips">
+          <li>☕ Café story</li><li>🛍️ Shop launch</li><li>📱 App explainer</li><li>🎉 Promo</li>
+        </ul>
+        <ul class="ticks">
+          <li>A mini-story ad that stops the scroll</li>
+          <li>Your product, mascot or shop in the cartoon</li>
+          <li>Commercial use on your social channels</li>
+        </ul>
+        <a href="#order" class="btn btn-block btn-alt" data-package="Brand cartoon ad">Order a brand ad</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- SAMPLES -->
+  <section class="section" id="samples">
+    <div class="wrap">
+      <h2>Samples</h2>
+      <p class="section-sub">Tap a video for sound.</p>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section wrap" id="how">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>
+        <span class="step-num">1</span>
+        <h3>Tell us your story</h3>
+        <p>Fill in the short form: what happened, who's in it, and the vibe — sweet, funny or dramatic.</p>
+      </li>
+      <li>
+        <span class="step-num">2</span>
+        <h3>Approve the script</h3>
+        <p>We write a scene-by-scene script and send it to you. Tweak anything before we animate.</p>
+      </li>
+      <li>
+        <span class="step-num">3</span>
+        <h3>Get your cartoon</h3>
+        <p>Your finished vertical video arrives in <strong data-delivery>3–5</strong> days, ready to post or share.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ORDER -->
+  <section class="section wrap" id="order">
+    <h2>Order your cartoon</h2>
+    <p class="section-sub">No payment now. We read every story personally and reply within 24 hours.</p>
+    <div class="order-box" id="orderBox">
+      <!-- Filled by app.js: Tally form if formUrl is set, otherwise a fallback -->
+    </div>
+    <div class="pay" id="payBox" hidden>
+      <p><strong>Already approved your script?</strong> Pay securely here:</p>
+      <a class="btn btn-alt" id="payLink" href="#" target="_blank" rel="noopener">Pay for my cartoon</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section wrap" id="faq">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Do I need to send photos?</summary>
+        <p>Photos help, but a description works too ("tall, curly hair, always in a hoodie"). We design cartoon characters inspired by the people in your story — not exact copies.</p>
+      </details>
+      <details>
+        <summary>When do I pay?</summary>
+        <p>Only after you've seen and approved your script. Then we send you a secure payment link, and animation starts once it's paid.</p>
+      </details>
+      <details>
+        <summary>Can I ask for changes?</summary>
+        <p>Yes — change anything in the script before we animate. After delivery, one round of small fixes (a caption, a line, a shot) is included.</p>
+      </details>
+      <details>
+        <summary>How is it made?</summary>
+        <p>Every story is written and directed by a real person. We animate it with AI video tools, then edit, time and score it by hand. That's how we keep it fast and affordable.</p>
+      </details>
+      <details>
+        <summary>Will you post my story online?</summary>
+        <p>Never without your permission. Your video is yours. If you're happy for us to share it as a sample, we'll ask first.</p>
+      </details>
+      <details>
+        <summary>Can my business use the ad anywhere?</summary>
+        <p>The brand package includes use on your own social media, website and in-store screens. Need paid ads or TV? Just ask.</p>
+      </details>
+      <details>
+        <summary>I need it by a certain date</summary>
+        <p>Put your deadline in the form. Rush orders are often possible — we'll tell you right away if we can make it.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section wrap contact" id="contact">
+    <h2>Say hi</h2>
+    <p class="section-sub">Questions before ordering? Message us — a real person answers.</p>
+    <div class="contact-links" id="contactLinks"></div>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <p>© <span id="year">2026</span> <span data-name>Toonbox Stories</span></p>
+  <p class="fineprint">“Pixar-style” describes the look of our animation. We are an independent studio, not affiliated with Pixar or Disney.</p>
+</footer>
+
+<a href="#order" class="sticky-cta" id="stickyCta">Order your cartoon — from <span data-personal-price>$29</span></a>
+
+<script src="app.js"></script>
+</body>
+</html>
