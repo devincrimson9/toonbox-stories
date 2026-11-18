@@ -23,8 +23,8 @@ window.SITE = {
   paymentUrl: "",
 
   // 5. Contact
-  tiktokHandle: "yourhandle",                // PLACEHOLDER — without the @
-  instagramHandle: "",                       // optional, without the @
+  tiktokHandle: "d.crimson",                 // without the @
+  instagramHandle: "d.crimsonclips",          // optional, without the @
   email: "",                                 // optional, e.g. hello@yourname.com
 };
 
