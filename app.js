@@ -102,7 +102,10 @@
         document.body.appendChild(sc);
       } else if (window.Tally) { window.Tally.loadEmbeds(); }
     } else {
-      var dm = tiktokUrl
+      // Instagram DM first (ig.me opens a chat straight away), TikTok as backup
+      var dm = S.instagramHandle
+        ? '<a class="btn" href="https://ig.me/m/' + esc(S.instagramHandle) + '" target="_blank" rel="noopener">Message us on Instagram</a>'
+        : tiktokUrl
         ? '<a class="btn" href="' + esc(tiktokUrl) + '" target="_blank" rel="noopener">Message us on TikTok</a>'
         : "";
       box.innerHTML =
@@ -131,8 +134,8 @@
 
   // --- Contact ---
   var links = [];
-  if (tiktokUrl) links.push(["🎵", "TikTok @" + S.tiktokHandle, tiktokUrl]);
   if (igUrl) links.push(["📸", "Instagram @" + S.instagramHandle, igUrl]);
+  if (tiktokUrl) links.push(["🎵", "TikTok @" + S.tiktokHandle, tiktokUrl]);
   if (S.email) links.push(["✉️", S.email, "mailto:" + S.email]);
   $("#contactLinks").innerHTML = links.map(function (l) {
     return '<a href="' + esc(l[2]) + '"' + (l[2].indexOf("http") === 0 ? ' target="_blank" rel="noopener"' : "") + ">" +
